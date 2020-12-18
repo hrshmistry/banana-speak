@@ -1,8 +1,10 @@
-// 2nd way of using jS on client
+var btnTranslate = document.querySelector("#btn-translate");
+var txtInput = document.querySelector("#txt-input");
 
-console.log("script is working from a differet file");
+function clickEventHandler() {
+    console.log("Clicked");
+    console.log("input", txtInput.value);
+}
 
-var username = prompt("Give me your username: ");
+btnTranslate.addEventListener("click", clickEventHandler);
 
-var welcomeMessage = "This Script works " + username;
-alert(welcomeMessage);

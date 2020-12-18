@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,24 @@
     <!-- <script>
         console.log("Script is working!");
     </script> -->
-    <script src="app.js"></script>
+    <style>
+        textarea {
+            width: 80%;
+            height: 10vh;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+        }
+    </style>
 </head>
+
 <body>
     <h1>talk banana</h1>
-</body>
-</html>
+    <textarea id="txt-input"
+        placeholder="Put your sentence in English here and we will convert it to banana"></textarea>
+    <button id="btn-translate">Translate</button>
 
+    <script src="app.js"></script>
+</body>
+
+</html>
